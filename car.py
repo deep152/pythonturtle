@@ -5,7 +5,7 @@ wn = trtl.Screen()
 #wn.update()
 
 #  screen size does the show the full car, drag to make the window bigger
-# pontiac ferrero
+
 #  list of colors 
 colors = ['pink', '#ee0113', '#656565', '#040309', '#DC143C,', '#cf4944', '#008c45', '#F3E0BE', '#0c193c']
 #                   red     dark grey   black    livery colors (w,r,g)               bg color    uc color
@@ -14,7 +14,7 @@ colors = ['pink', '#ee0113', '#656565', '#040309', '#DC143C,', '#cf4944', '#008c
 livery_g = trtl.Turtle()
 livery_w = trtl.Turtle()
 livery_r = trtl.Turtle()
-wn.bgcolor(colors[7])
+wn.bgcolor('white')
 
 
 #  settings for turtle
@@ -96,6 +96,13 @@ trtl.forward(25)
 trtl.left(90)
 
 #  back part of the car leading to roof
+''''
+i = 1
+while i < 34:
+  trtl.forward(2.5)
+  trtl.right(0.4)
+  i-=1
+'''
 for rear in range(35):
   trtl.forward(2.5)
   trtl.right(0.4)
@@ -132,6 +139,16 @@ for hood in range(40):
   trtl.right(0.6)
 
 #  car second curve on hood
+
+'''''
+i = 5
+while i < 4:
+  trtl.forward(4)
+  trtl.right(4)
+  trtl.right(3)
+  i-=1
+'''''
+
 for hood in range(5):
   trtl.forward(4)
   trtl.right(4)
